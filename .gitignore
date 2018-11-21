@@ -5,9 +5,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# build artifacts
-build/
-
 # Runtime data
 pids
 *.pid
@@ -38,7 +35,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-package-lock.json
 
 # Typescript v1 declaration files
 typings/
@@ -60,3 +56,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+#lock file
+package-lock.json

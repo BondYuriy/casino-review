@@ -1,1 +1,35 @@
-/*gitkeep*/
+.header {
+  background-color: #27273d;
+  border-bottom: #4b4b72 solid 1px;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .nav {
+    font-family: $Roboto;
+    font-weight: $Medium;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    & ul {
+      display: flex;
+
+      & li a {
+        display: inline-block;
+        padding: 30px 30px;
+        color: #cdcdcd;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #3a4460;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
