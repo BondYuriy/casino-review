@@ -1,1 +1,28 @@
-/*gitkeep*/
+.footer {
+  min-height: 102px;
+  background-color: #27273d;
+  border-top: #4b4b72 solid 1px;
+}
+
+.footer-box {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: $Roboto;
+  font-weight: $Medium;
+  font-size: 15px;
+  line-height: 30px;
+  color: #888ca0;
+
+  & span {
+    flex: 0 0 auto;
+  }
+
+  & .social {
+    flex: 0 0 auto;
+
+    & svg:nth-last-child(n + 2) {
+      margin-right: 18px;
+    }
+  }
+}

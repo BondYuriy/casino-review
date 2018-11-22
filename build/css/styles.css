@@ -6008,8 +6008,16 @@ a.text-dark:focus {
 	margin-bottom: 35px;
 }
 
+.mb-50 {
+	margin-bottom: 50px;
+}
+
 .mb-70 {
 	margin-bottom: 70px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
 }
 
 /*------- margin-left ---------*/
@@ -6041,6 +6049,16 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
 a {
@@ -6103,10 +6121,38 @@ a {
 	color: #fff;
 }
 
-/*gitkeep*/
+.footer {
+	min-height: 102px;
+	background-color: #27273d;
+	border-top: #4b4b72 solid 1px;
+}
+
+.footer-box {
+	padding: 35px 0;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 30px;
+	color: #888ca0;
+}
+
+.footer-box span {
+	flex: 0 0 auto;
+}
+
+.footer-box .social {
+	flex: 0 0 auto;
+}
+
+.footer-box .social svg:nth-last-child(n + 2) {
+	margin-right: 18px;
+}
 
 .main-header {
 	background-color: #27273d;
+	margin-bottom: 85px;
 }
 
 .main-header_box {
@@ -6189,7 +6235,7 @@ a {
 	border-left: #4b4b72 solid 1px;
 }
 
-.top-games h2 {
+.top-games h3 {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 20px;
@@ -6220,7 +6266,7 @@ a {
 	border-radius: 50%;
 }
 
-.top-games .games-list .games-item h4 {
+.top-games .games-list .games-item h5 {
 	flex: 0 0 50%;
 	margin: 0;
 	font-family: Roboto;
@@ -6235,6 +6281,179 @@ a {
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #587be1;
+}
+
+main {
+	background-color: #fff;
+}
+
+.article {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #6E727A;
+}
+
+.article h2 {
+	font-size: 36px;
+	font-weight: 400;
+	color: #27273D;
+	margin-bottom: 22px;
+}
+
+.info-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #6E727A;
+}
+
+.info-list li {
+	flex: 0 0 38%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-list li:nth-last-child(n + 3) {
+	margin-bottom: 47px;
+}
+
+.info-list li .fa {
+	display: inline-block;
+	flex: 0 0 27%;
+	background-repeat: no-repeat;
+}
+
+.info-list li .fa-rating {
+	background-image: url("../img/rating.svg");
+}
+
+.info-list li .fa-reviews {
+	background-image: url("../img/review.svg");
+}
+
+.info-list li .fa-support {
+	background-image: url("../img/support.svg");
+}
+
+.info-list li .fa-bonuses {
+	background-image: url("../img/coins-icon.svg");
+}
+
+.info-list li .article-list h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #27273D;
+	margin-bottom: 12px;
+}
+
+.info-list li .article-list p {
+	margin: 0;
+}
+
+.casino-table {
+	height: 500px;
+	background-color: gainsboro;
+}
+
+.article-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article-info .article {
+	flex: 0 0 60%;
+	text-align: start;
+}
+
+.article-info .article-icon {
+	flex: 0 0 35%;
+}
+
+.article-info .article-icon img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.option-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #6E727A;
+}
+
+.option-list li {
+	flex: 0 0 32%;
+	padding: 10px;
+	border: 1px solid #e5e6e8;
+}
+
+.option-list li:nth-last-child(n + 4) {
+	margin-bottom: 20px;
+}
+
+.option-list li h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #27273D;
+	margin-bottom: 8px;
+}
+
+.option-list li h4::before {
+	display: inline-block;
+	content: "";
+	width: 51px;
+	height: 47px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.option-list li .fa-cards::before {
+	background-image: url("../img/cards.svg");
+}
+
+.option-list li .fa-cherry::before {
+	background-image: url("../img/cherry.svg");
+}
+
+.option-list li .fa-bingo::before {
+	background-image: url("../img/bingo.svg");
+}
+
+.option-list li .fa-slots::before {
+	background-image: url("../img/slot-machine.svg");
+}
+
+.option-list li .fa-trophy::before {
+	background-image: url("../img/trophy.svg");
+}
+
+.option-list li .fa-piggy::before {
+	background-image: url("../img/piggy-bank.svg");
+}
+
+.casino-slider h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	color: #27273D;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 22px;
+}
+
+.casino-slider .casino-slider_box {
+	background-color: gainsboro;
+	height: 300px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
