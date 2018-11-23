@@ -1,0 +1,176 @@
+// .casino-table {
+//   height: 500px;
+//   background-color: gainsboro;
+// }
+
+.rating-items {
+  display: flex;
+  justify-content: center;
+
+  & .rating-item {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.casino-table_header {
+  display: flex;
+  background-color: #27273d;
+  font-family: $Roboto;
+  font-weight: $Medium;
+  font-size: $h4;
+  text-align: center;
+  color: #fff;
+
+  & .table-column {
+    padding: 40px 0;
+    border-right: 1px solid #e8e9eb;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  & .column-1 {
+    flex: 0 0 16%;
+  }
+
+  & .column-2 {
+    flex: 0 0 19%;
+  }
+
+  & .column-3 {
+    flex: 0 0 20%;
+  }
+
+  & .column-4 {
+    flex: 0 0 19%;
+  }
+
+  & .column-5 {
+    flex: 0 0 26%;
+  }
+}
+
+// .casino-table_main {
+//   border-left: 1px solid #e0e1e4;
+//   border-right: 1px solid #e0e1e4;
+// }
+
+.table-infos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #e0e1e4;
+  border-left: 1px solid #e0e1e4;
+  border-right: 1px solid #e0e1e4;
+  font-family: $Roboto;
+  font-weight: $Regular;
+  font-size: $text-size;
+  text-align: center;
+  color: #6e727a;
+
+  & .table-img {
+    flex: 0 0 16%;
+    padding: 20px;
+    border-right: 1px solid #e0e1e4;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e0e1e4;
+    }
+  }
+
+  & .table-rating {
+    flex: 0 0 19%;
+    padding: 20px;
+    border-right: 1px solid #e0e1e4;
+
+    & span {
+      font-weight: $Medium;
+      font-size: 20px;
+      color: $title;
+    }
+  }
+
+  & .table-bomus {
+    flex: 0 0 20%;
+    padding: 10px;
+    border-right: 1px solid #e0e1e4;
+
+    & p .text-now {
+      text-transform: uppercase;
+      color: #f21a1a;
+      margin-right: 5px;
+    }
+  }
+
+  & .table-payment {
+    flex: 0 0 19%;
+    padding: 20px;
+    border-right: 1px solid #e0e1e4;
+    display: flex;
+    justify-content: center;
+  }
+
+  & .table-btn {
+    flex: 0 0 26%;
+    padding: 20px;
+  }
+}
+
+.table-form {
+  text-align: center;
+  background: rgba(239, 239, 255, 0.4);
+  border: 1px solid #e0e1e4;
+  margin: 13px 0;
+  padding: 32px 22px 22px 22px;
+
+  & h3 {
+    margin-bottom: 13px;
+  }
+
+  & .rating-items {
+    margin-bottom: 27px;
+  }
+
+  & form {
+    margin-bottom: 19px;
+    
+    & textarea {
+      border: 0;
+      outline: none;
+      background: rgba(238, 238, 255, 0.85);
+      border: 1px solid #e8e9eb;
+      width: 49%;
+      margin-right: 16px;
+      resize: none;
+      padding: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .like::placeholder {
+      font-family: $Roboto;
+      font-size: 16px;
+      color: #3fab36;
+    }
+
+    .not-like::placeholder {
+      font-family: $Roboto;
+      font-size: 16px;
+      color: #f33636;
+    }
+
+    & a {
+      text-align: center;
+    }
+  }
+}

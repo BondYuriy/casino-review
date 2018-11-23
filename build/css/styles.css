@@ -6041,6 +6041,197 @@ a.text-dark:focus {
 	background-image: url("../img/logo.png");
 }
 
+.rating-items {
+	display: flex;
+	justify-content: center;
+}
+
+.rating-items .rating-item {
+	margin-right: 6px;
+}
+
+.rating-items .rating-item:last-child {
+	margin-right: 0;
+}
+
+.casino-table_header {
+	display: flex;
+	background-color: #27273d;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+}
+
+.casino-table_header .table-column {
+	padding: 40px 0;
+	border-right: 1px solid #e8e9eb;
+}
+
+.casino-table_header .table-column:last-child {
+	border-right: 0;
+}
+
+.casino-table_header .column-1 {
+	flex: 0 0 16%;
+}
+
+.casino-table_header .column-2 {
+	flex: 0 0 19%;
+}
+
+.casino-table_header .column-3 {
+	flex: 0 0 20%;
+}
+
+.casino-table_header .column-4 {
+	flex: 0 0 19%;
+}
+
+.casino-table_header .column-5 {
+	flex: 0 0 26%;
+}
+
+.table-infos {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border-bottom: 1px solid #e0e1e4;
+	border-left: 1px solid #e0e1e4;
+	border-right: 1px solid #e0e1e4;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	color: #6e727a;
+}
+
+.table-infos .table-img {
+	flex: 0 0 16%;
+	padding: 20px;
+	border-right: 1px solid #e0e1e4;
+}
+
+.table-infos .table-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: 1px solid #e0e1e4;
+}
+
+.table-infos .table-rating {
+	flex: 0 0 19%;
+	padding: 20px;
+	border-right: 1px solid #e0e1e4;
+}
+
+.table-infos .table-rating span {
+	font-weight: 500;
+	font-size: 20px;
+	color: #27273D;
+}
+
+.table-infos .table-bomus {
+	flex: 0 0 20%;
+	padding: 10px;
+	border-right: 1px solid #e0e1e4;
+}
+
+.table-infos .table-bomus p .text-now {
+	text-transform: uppercase;
+	color: #f21a1a;
+	margin-right: 5px;
+}
+
+.table-infos .table-payment {
+	flex: 0 0 19%;
+	padding: 20px;
+	border-right: 1px solid #e0e1e4;
+	display: flex;
+	justify-content: center;
+}
+
+.table-infos .table-btn {
+	flex: 0 0 26%;
+	padding: 20px;
+}
+
+.table-form {
+	text-align: center;
+	background: rgba(239, 239, 255, 0.4);
+	border: 1px solid #e0e1e4;
+	margin: 13px 0;
+	padding: 32px 22px 22px 22px;
+}
+
+.table-form h3 {
+	margin-bottom: 13px;
+}
+
+.table-form .rating-items {
+	margin-bottom: 27px;
+}
+
+.table-form form {
+	margin-bottom: 19px;
+}
+
+.table-form form textarea {
+	border: 0;
+	outline: none;
+	background: rgba(238, 238, 255, 0.85);
+	border: 1px solid #e8e9eb;
+	width: 49%;
+	margin-right: 16px;
+	resize: none;
+	padding: 20px;
+}
+
+.table-form form textarea:last-child {
+	margin-right: 0;
+}
+
+.table-form form .like::-webkit-input-placeholder {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #3fab36;
+}
+
+.table-form form .like::-ms-input-placeholder {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #3fab36;
+}
+
+.table-form form .like::placeholder {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #3fab36;
+}
+
+.table-form form .not-like::-webkit-input-placeholder {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #f33636;
+}
+
+.table-form form .not-like::-ms-input-placeholder {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #f33636;
+}
+
+.table-form form .not-like::placeholder {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #f33636;
+}
+
+.table-form form a {
+	text-align: center;
+}
+
 * {
 	transition: 0.5s;
 }
@@ -6082,6 +6273,17 @@ a {
 
 .btn-orange:hover {
 	background-color: #FF6B00;
+	color: #fff;
+}
+
+.btn-violet {
+	border: #8162FF solid 2px;
+	color: #8162FF;
+	min-width: 120px;
+}
+
+.btn-violet:hover {
+	background-color: #8162FF;
 	color: #fff;
 }
 
@@ -6353,11 +6555,6 @@ main {
 
 .info-list li .article-list p {
 	margin: 0;
-}
-
-.casino-table {
-	height: 500px;
-	background-color: gainsboro;
 }
 
 .article-info {

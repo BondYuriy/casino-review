@@ -18,3 +18,14 @@
   }
 }
 
+.btn-violet {
+  border: $violet solid 2px;
+  color: $violet;
+  min-width: 120px;
+
+  &:hover {
+    background-color: $violet;
+    color: #fff;
+  }
+}
+
