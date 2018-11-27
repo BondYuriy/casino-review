@@ -1,0 +1,23 @@
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+  & .owl-prev,
+  .owl-next {
+    padding: 25px;
+    background-color: #e4e4e4;
+    border: 1px solid #e5e6e8;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & .owl-prev {
+    margin-right: 19px;
+    background-image: url("../img/icon-left.svg");
+  }
+
+  & .owl-next {
+    background-image: url("../img/icon-right.svg");
+  }
+}

@@ -21,8 +21,12 @@
   & .social {
     flex: 0 0 auto;
 
-    & svg:nth-last-child(n + 2) {
-      margin-right: 18px;
+    & a {
+      text-decoration: none;
+
+      &:nth-last-child(n + 2) {
+        margin-right: 18px;
+      }
     }
   }
 }

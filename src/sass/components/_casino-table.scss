@@ -108,6 +108,12 @@
       color: #f21a1a;
       margin-right: 5px;
     }
+
+    & p .text-free {
+      text-transform: capitalize;
+      color: #249F1A;
+      margin-right: 5px;
+    }
   }
 
   & .table-payment {
@@ -125,6 +131,7 @@
 }
 
 .table-form {
+  display: none;
   text-align: center;
   background: rgba(239, 239, 255, 0.4);
   border: 1px solid #e0e1e4;
@@ -141,7 +148,7 @@
 
   & form {
     margin-bottom: 19px;
-    
+
     & textarea {
       border: 0;
       outline: none;
@@ -168,9 +175,26 @@
       font-size: 16px;
       color: #f33636;
     }
+  }
 
-    & a {
-      text-align: center;
-    }
+  .form-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.casino-table_footer {
+  padding: 48px 0;
+  border: 1px solid #e8e9eb;
+
+  & a {
+    display: block;
+    font-family: $Roboto;
+    font-weight: $Bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #587be1;
   }
 }
