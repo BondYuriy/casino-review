@@ -7081,7 +7081,7 @@ main {
 .review-header {
 	min-height: 480px;
 	background-color: #27273d;
-	background-image: url("../../img/bi-review.png");
+	background-image: url("../img/bi-review.png");
 	position: relative;
 }
 
