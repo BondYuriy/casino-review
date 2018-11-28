@@ -1,21 +1,3 @@
-// .casino-table {
-//   height: 500px;
-//   background-color: gainsboro;
-// }
-
-.rating-items {
-  display: flex;
-  justify-content: center;
-
-  & .rating-item {
-    margin-right: 6px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
 .casino-table_header {
   display: flex;
   background-color: #27273d;
@@ -111,7 +93,7 @@
 
     & p .text-free {
       text-transform: capitalize;
-      color: #249F1A;
+      color: #249f1a;
       margin-right: 5px;
     }
   }

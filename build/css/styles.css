@@ -6280,7 +6280,15 @@ a.text-dark:focus {
 }
 
 .rating-items .rating-item {
+	width: 24px;
+	height: 24px;
 	margin-right: 6px;
+}
+
+.rating-items .rating-item img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .rating-items .rating-item:last-child {
@@ -6362,7 +6370,7 @@ a.text-dark:focus {
 .table-infos .table-rating span {
 	font-weight: 500;
 	font-size: 20px;
-	color: #27273D;
+	color: #27273d;
 }
 
 .table-infos .table-bomus {
@@ -6379,7 +6387,7 @@ a.text-dark:focus {
 
 .table-infos .table-bomus p .text-free {
 	text-transform: capitalize;
-	color: #249F1A;
+	color: #249f1a;
 	margin-right: 5px;
 }
 
@@ -6588,7 +6596,7 @@ a.text-dark:focus {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
-	color: #27273D;
+	color: #27273d;
 	margin-bottom: 14px;
 }
 
@@ -6601,7 +6609,7 @@ a.text-dark:focus {
 	padding: 15px;
 	font-family: "Roboto", sans-serif;
 	font-size: 15px;
-	color: #27273D;
+	color: #27273d;
 	-webkit-transform: rotatey(-180deg);
 	transform: rotatey(-180deg);
 }
@@ -6610,7 +6618,7 @@ a.text-dark:focus {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	color: #27273D;
+	color: #27273d;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #e2e2e2;
 	margin-bottom: 15px;
@@ -6621,7 +6629,7 @@ a.text-dark:focus {
 }
 
 .back p span {
-	color: #6E727A;
+	color: #6e727a;
 	margin-left: 5px;
 }
 
@@ -6685,23 +6693,23 @@ a {
 }
 
 .btn-orange {
-	border: #FF6B00 solid 2px;
-	color: #FF6B00;
+	border: #ff6b00 solid 2px;
+	color: #ff6b00;
 }
 
 .btn-orange:hover {
-	background-color: #FF6B00;
+	background-color: #ff6b00;
 	color: #fff;
 }
 
 .btn-violet {
-	border: #8162FF solid 2px;
-	color: #8162FF;
+	border: #8162ff solid 2px;
+	color: #8162ff;
 	min-width: 120px;
 }
 
 .btn-violet:hover {
-	background-color: #8162FF;
+	background-color: #8162ff;
 	color: #fff;
 }
 
@@ -6916,13 +6924,13 @@ main {
 	font-size: 16px;
 	text-align: center;
 	text-transform: capitalize;
-	color: #6E727A;
+	color: #6e727a;
 }
 
 .article h2 {
 	font-size: 36px;
 	font-weight: 400;
-	color: #27273D;
+	color: #27273d;
 	margin-bottom: 22px;
 }
 
@@ -6932,7 +6940,7 @@ main {
 	flex-wrap: wrap;
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	color: #6E727A;
+	color: #6e727a;
 }
 
 .info-list li {
@@ -6971,7 +6979,7 @@ main {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
-	color: #27273D;
+	color: #27273d;
 	margin-bottom: 12px;
 }
 
@@ -7005,7 +7013,7 @@ main {
 	flex-wrap: wrap;
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	color: #6E727A;
+	color: #6e727a;
 }
 
 .option-list li {
@@ -7022,7 +7030,7 @@ main {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
-	color: #27273D;
+	color: #27273d;
 	margin-bottom: 8px;
 }
 
@@ -7064,10 +7072,77 @@ main {
 	font-family: "Roboto", sans-serif;
 	font-size: 36px;
 	font-weight: 400;
-	color: #27273D;
+	color: #27273d;
 	text-align: center;
 	text-transform: capitalize;
 	margin-bottom: 60px;
+}
+
+.review-header {
+	min-height: 480px;
+	background-color: #27273d;
+	background-image: url("../../img/bi-review.png");
+	position: relative;
+}
+
+.review-header::before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(39, 39, 61, 0.8);
+}
+
+.review-header_box {
+	padding-top: 40px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+}
+
+.review-header_box .review-header_logo {
+	max-width: 230px;
+	margin: 0 auto 12px auto;
+}
+
+.review-header_box .review-header_logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.review-header_box h1 {
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+
+.review-header_box span {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 19px;
+}
+
+.review-header_box .rating-items {
+	margin-bottom: 16px;
+}
+
+.review-header_box .rating-items .rating-item {
+	width: 28px;
+	height: 28px;
+}
+
+.review-header_box .review-btn_box a {
+	min-width: 145px;
+	color: #fff;
+	margin-right: 14px;
+}
+
+.review-header_box .review-btn_box a:last-child {
+	margin-right: 0;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

@@ -1,0 +1,68 @@
+.review-header {
+  min-height: 480px;
+  background-color: #27273d;
+  background-image: url("../../img/bi-review.png");
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 61, 0.8);
+  }
+}
+
+.review-header_box {
+  padding-top: 40px;
+  font-family: $Roboto;
+  font-weight: $Medium;
+  text-align: center;
+  color: #fff;
+
+  & .review-header_logo {
+    max-width: 230px;
+    margin: 0 auto 12px auto;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & h1 {
+    font-size: $h1;
+    margin-bottom: 25px;
+  }
+
+  & span {
+    display: block;
+    font-size: $h4;
+    margin-bottom: 19px;
+  }
+
+  & .rating-items {
+    margin-bottom: 16px;
+
+    & .rating-item {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  & .review-btn_box {
+    & a {
+      min-width: 145px;
+      color: #fff;
+      margin-right: 14px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

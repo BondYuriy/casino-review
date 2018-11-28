@@ -1,0 +1,20 @@
+.rating-items {
+  display: flex;
+  justify-content: center;
+
+  & .rating-item {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
