@@ -3,6 +3,7 @@
   background-color: #27273d;
   background-image: url("../img/bi-review.png");
   position: relative;
+  margin-bottom: 27px;
 
   &::before {
     display: block;
@@ -64,5 +65,105 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+.table-box {
+  margin-bottom: 200px;
+
+  & .table-form {
+    display: block;
+  }
+}
+
+.info-list-2 {
+  margin-bottom: 45px;
+  font-family: $Roboto;
+  font-weight: $Regular;
+  font-size: 16px;
+  color: $title;
+
+  & h4 {
+    font-family: $Roboto;
+    font-weight: $Regular;
+    font-size: $h4;
+    margin-bottom: 25px;
+  }
+
+  & ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & .info-list_icon {
+      flex: 0 0 40px;
+      height: 40px;
+      margin-right: 25px;
+
+      & img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    & p span {
+      color: #249f1a;
+      margin-left: 5px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.support-box {
+  max-width: 460px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  & .support-item {
+    flex: 0 0 30%;
+    padding: 25px 0;
+    border: 1px solid #e0e1e4;
+
+    & img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 35px;
+      max-height: 35px;
+      margin: auto;
+    }
+  }
+}
+
+.main-review-container {
+  position: relative;
+
+  & button {
+    border: 0;
+    width: 50px;
+    height: 50px;
+    background: #8162ff;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  & .btn-show {
+    top: -70px;
+    background-image: url("../img/Back-2.svg");
+  }
+
+  & .btn-hide {
+    bottom: -60px;
+    background-image: url("../img/close-2.svg");
   }
 }

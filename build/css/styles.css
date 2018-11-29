@@ -6241,6 +6241,10 @@ a.text-dark:focus {
 	margin-bottom: 35px;
 }
 
+.mb-45 {
+	margin-bottom: 45px;
+}
+
 .mb-50 {
 	margin-bottom: 50px;
 }
@@ -6274,6 +6278,87 @@ a.text-dark:focus {
 	background-image: url("../img/logo.png");
 }
 
+.tabs {
+	height: 450px;
+	padding: 25px;
+	border: 1px solid #e0e0e0;
+}
+
+.tabs .nav {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.tabs .nav .nav-item {
+	border-radius: 0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.tabs .nav .nav-item:last-child {
+	border-right: 0;
+}
+
+.tabs .nav .nav-item .nav-link {
+	background-color: rgba(0, 0, 0, 0);
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #b0b0b0;
+}
+
+.tabs .nav .nav-item .active {
+	color: #4f4f61;
+}
+
+.tab-content {
+	margin-top: 35px;
+}
+
+.tab-content #pills-general,
+.tab-content #pills-other {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #27273d;
+}
+
+.tab-content #pills-general ul,
+.tab-content #pills-other ul {
+	-webkit-columns: 2;
+	columns: 2;
+}
+
+.tab-content #pills-general ul li,
+.tab-content #pills-other ul li {
+	margin-bottom: 30px;
+}
+
+.tab-content #pills-general ul li:last-child,
+.tab-content #pills-other ul li:last-child {
+	margin-bottom: 0;
+}
+
+.tab-content #pills-general ul li p span,
+.tab-content #pills-other ul li p span {
+	color: #6e727a;
+	margin-left: 5px;
+}
+
+.tab-content #pills-description {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.tab-content #pills-description h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #27273d;
+	margin-bottom: 15px;
+}
+
 .rating-items {
 	display: flex;
 	justify-content: center;
@@ -6293,6 +6378,24 @@ a.text-dark:focus {
 
 .rating-items .rating-item:last-child {
 	margin-right: 0;
+}
+
+.article-2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #6e727a;
+	margin-bottom: 20px;
+}
+
+.article-2 h2 {
+	font-weight: 400;
+	font-size: 36px;
+	color: #27273d;
+}
+
+.article-2 p {
+	margin-top: 17px;
 }
 
 .casino-table_header {
@@ -7083,6 +7186,7 @@ main {
 	background-color: #27273d;
 	background-image: url("../img/bi-review.png");
 	position: relative;
+	margin-bottom: 27px;
 }
 
 .review-header::before {
@@ -7143,6 +7247,107 @@ main {
 
 .review-header_box .review-btn_box a:last-child {
 	margin-right: 0;
+}
+
+.table-box {
+	margin-bottom: 200px;
+}
+
+.table-box .table-form {
+	display: block;
+}
+
+.info-list-2 {
+	margin-bottom: 45px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #27273d;
+}
+
+.info-list-2 h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+.info-list-2 ul li {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.info-list-2 ul li .info-list_icon {
+	flex: 0 0 40px;
+	height: 40px;
+	margin-right: 25px;
+}
+
+.info-list-2 ul li .info-list_icon img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.info-list-2 ul li p span {
+	color: #249f1a;
+	margin-left: 5px;
+}
+
+.info-list-2 ul li:last-child {
+	margin-bottom: 0;
+}
+
+.support-box {
+	max-width: 460px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.support-box .support-item {
+	flex: 0 0 30%;
+	padding: 25px 0;
+	border: 1px solid #e0e1e4;
+}
+
+.support-box .support-item img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 35px;
+	max-height: 35px;
+	margin: auto;
+}
+
+.main-review-container {
+	position: relative;
+}
+
+.main-review-container button {
+	border: 0;
+	width: 50px;
+	height: 50px;
+	background: #8162ff;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.main-review-container .btn-show {
+	top: -70px;
+	background-image: url("../img/Back-2.svg");
+}
+
+.main-review-container .btn-hide {
+	bottom: -60px;
+	background-image: url("../img/close-2.svg");
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

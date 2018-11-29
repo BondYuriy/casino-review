@@ -1,0 +1,17 @@
+.article-2 {
+  font-family: $Roboto;
+  font-weight: $Regular;
+  font-size: $text-size;
+  color: $text;
+  margin-bottom: 20px;
+
+  & h2 {
+    font-weight: $Regular;
+    font-size: $h2;
+    color: $title;
+  }
+
+  & p {
+    margin-top: 17px;
+  }
+}
