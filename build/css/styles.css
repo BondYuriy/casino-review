@@ -7020,6 +7020,81 @@ a.text-dark:focus {
 	margin: 0 auto;
 }
 
+.information-card {
+	min-height: 370px;
+}
+
+.information-card .information-item_img img {
+	display: block;
+	width: 100%;
+	height: 192px;
+	overflow: hidden;
+}
+
+.information-card .information-item_content {
+	padding: 20px;
+	border: 1px solid #e8e9eb;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #6e727a;
+}
+
+.information-card .information-item_content h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #27273d;
+	margin-bottom: 15px;
+}
+
+.information-card .information-item_content p {
+	margin-bottom: 10px;
+}
+
+.information-card .information-item_content p a {
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #587be1;
+	margin-left: 5px;
+}
+
+.information-card .information-item_content .information-date {
+	display: flex;
+	justify-content: space-between;
+}
+
+.information-card .information-item_content .information-date span {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #a0a0a0;
+}
+
+.pagination ul {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination ul li {
+	padding: 25px;
+	background-color: #e4e4e4;
+	border: 1px solid #e5e6e8;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pagination ul .prev {
+	margin-right: 19px;
+	background-image: url("../img/icon-left.svg");
+}
+
+.pagination ul .next {
+	background-image: url("../img/icon-right.svg");
+}
+
 * {
 	transition: 0.5s;
 }
@@ -7400,6 +7475,8 @@ main {
 	min-height: 480px;
 	background-color: #27273d;
 	background-image: url("../img/bi-review.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
 	margin-bottom: 27px;
 }
@@ -7713,6 +7790,7 @@ main {
 	content: "";
 	background-image: url("../img/categories-bi.png");
 	background-repeat: no-repeat;
+	background-size: cover;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -7773,6 +7851,72 @@ main {
 	border: 0;
 	padding: 38px 0;
 	background-color: #fff;
+}
+
+.information-header {
+	min-height: 420px;
+	background-color: #27273d;
+	background-image: url("../img/information-bi.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 27px;
+	padding-top: 72px;
+}
+
+.information-header::before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(39, 39, 61, 0.8);
+}
+
+.information-header_box {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #eaeaea;
+}
+
+.information-header_box h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	color: #587be1;
+}
+
+.information-header_box p {
+	margin-top: 18px;
+}
+
+.information-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.information-list .information-card {
+	flex: 0 0 32%;
+	margin-right: 22px;
+	margin-bottom: 22px;
+}
+
+.information-list .information-card:nth-child(3n + 3) {
+	margin-right: 0;
+}
+
+.information-list .information-card:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 90px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

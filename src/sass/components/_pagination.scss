@@ -1,0 +1,23 @@
+.pagination {
+  & ul {
+    display: flex;
+    justify-content: center;
+
+    & li {
+      padding: 25px;
+      background-color: #e4e4e4;
+      border: 1px solid #e5e6e8;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    & .prev {
+      margin-right: 19px;
+      background-image: url("../img/icon-left.svg");
+    }
+
+    & .next {
+      background-image: url("../img/icon-right.svg");
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.information-card {
+  min-height: 370px;
+
+  & .information-item_img {
+    & img {
+      display: block;
+      width: 100%;
+      height: 192px;
+      overflow: hidden;
+    }
+  }
+
+  & .information-item_content {
+    padding: 20px;
+    border: 1px solid #e8e9eb;
+    font-family: $Roboto;
+    font-weight: $Regular;
+    font-size: $text-size;
+    color: $text;
+
+    & h4 {
+      font-family: $Roboto;
+      font-weight: $Medium;
+      font-size: $h4;
+      color: $title;
+      margin-bottom: 15px;
+    }
+
+    & p {
+      margin-bottom: 10px;
+
+      & a {
+        display: inline-block;
+        font-family: $Roboto;
+        font-weight: $Regular;
+        font-size: 16px;
+        color: #587be1;
+        margin-left: 5px;
+      }
+    }
+
+    & .information-date {
+      display: flex;
+      justify-content: space-between;
+
+      & span {
+        font-family: $Roboto;
+        font-weight: $Regular;
+        font-size: 13px;
+        color: #a0a0a0;
+      }
+    }
+  }
+}
