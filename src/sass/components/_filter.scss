@@ -1,0 +1,98 @@
+.filter {
+  border: 1px solid #e8e9eb;
+
+  & h4 {
+    font-family: $Roboto;
+    font-weight: $Medium;
+    font-size: $h4;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title;
+    padding: 38px 0;
+    border-bottom: 1px solid #e8e9eb;
+  }
+
+  & .filter-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+
+    & .form-group {
+      flex: 0 0 28%;
+    }
+
+    & .filter-range {
+      flex: 0 0 18%;
+      position: relative;
+
+      & input[type="range"]::-webkit-slider-runnable-track {
+        height: 11px;
+      }
+
+      & input[type="range"]::-webkit-slider-thumb {
+        height: 24px;
+        width: 24px;
+        margin-top: -7px;
+      }
+
+      & input[type="range"]::-moz-range-track {
+        height: 11px;
+      }
+
+      & input[type="range"]::-moz-range-thumb {
+        height: 24px;
+        width: 24px;
+        margin-top: -7px;
+      }
+
+      & input[type="range"]::-ms-track {
+        height: 11px;
+      }
+
+      & input[type="range"]::-ms-thumb {
+        height: 24px;
+        width: 24px;
+        margin-top: -7px;
+      }
+
+      & span {
+        font-family: $Roboto;
+        font-weight: $Medium;
+        font-size: 10px;
+        color: rgba(110, 114, 122, 0.33);
+        position: absolute;
+        bottom: 12px;
+      }
+
+      & .start {
+        left: 0;
+      }
+
+      & .end {
+        right: 0;
+      }
+    }
+
+    & .checkbox-group {
+      flex: 0 0 18%;
+
+      & h5 {
+        margin-bottom: 17px;
+      }
+
+      & .checkbox-group_box .form-check .form-check-label {
+        color: #6e727a;
+        text-transform: capitalize;
+      }
+    }
+
+    & label,
+    h5 {
+      font-family: $Roboto;
+      font-weight: $Medium;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #000000;
+    }
+  }
+}

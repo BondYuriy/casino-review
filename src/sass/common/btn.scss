@@ -30,3 +30,14 @@
     color: #fff;
   }
 }
+
+.btn-white {
+  border: $white solid 2px;
+  color: $white;
+  min-width: 120px;
+
+  &:hover {
+    background-color: $white;
+    color: $title;
+  }
+}

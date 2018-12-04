@@ -1,14 +1,21 @@
 .pagination {
+  display: flex;
+  justify-content: flex-end;
+
   & ul {
     display: flex;
     justify-content: center;
 
     & li {
-      padding: 25px;
       background-color: #e4e4e4;
       border: 1px solid #e5e6e8;
       background-repeat: no-repeat;
       background-position: center;
+
+      & a {
+        display: inline-block;
+        padding: 25px;
+      }
     }
 
     & .prev {

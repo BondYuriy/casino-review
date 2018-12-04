@@ -1,0 +1,45 @@
+.pagination2 {
+  display: inline-block;
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e4e4e4;
+
+    & li {
+      min-width: 10px;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & a {
+        display: inline-block;
+        min-width: 10px;
+        height: 24px;
+        font-family: $Roboto;
+        font-weight: $Medium;
+        font-size: 13px;
+        text-align: center;
+        color: #c0c0c0;
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      & .active {
+        color: #6e727a;
+      }
+
+      & .prev {
+        background-image: url("../img/icon-left.svg");
+      }
+
+      & .next {
+        background-image: url("../img/icon-right.svg");
+      }
+    }
+  }
+}
