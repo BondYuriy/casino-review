@@ -6,7 +6,7 @@
   background-size: cover;
   position: relative;
   margin-bottom: 27px;
-  padding-top: 72px;
+  padding: 65px 0;
 
   &::before {
     display: block;
@@ -20,7 +20,9 @@
   }
 }
 
-.promo-header_box {
+.promo-header_box,
+.promo-info,
+.promo-info_article {
   font-family: $Roboto;
   font-weight: $Regular;
   font-size: $text-size;
@@ -36,10 +38,14 @@
   & p {
     margin-top: 18px;
   }
+}
 
-  & .btn {
-    margin-top: 30px;
-  }
+.promo-info_article {
+  margin-top: 30px;
+}
+
+.btn-white {
+  margin-top: 30px;
 }
 
 .promo-new_box {

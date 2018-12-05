@@ -59,6 +59,10 @@
         &:nth-last-child(-n + 4) {
           border-bottom: 0;
         }
+
+        & h5 {
+          color: $title;
+        }
       }
     }
   }

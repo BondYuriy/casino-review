@@ -17,6 +17,30 @@ $(document).ready(function() {
   });
 });
 
+//================================================
+
 $(".flip").click(function() {
-  $(this).parents('.card').toggleClass("flipped");
+  $(this)
+    .parents(".card")
+    .toggleClass("flipped");
+});
+
+//================================================
+
+$(document).ready(function() {
+  $(".promo-info").hide();
+
+  $(".btn-white").click(function() {
+    var lable = $(".btn-white")
+      .text()
+      .trim();
+
+    if (lable == "READ MORE") {
+      $(".btn-white").text("READ LESS");
+      $(".promo-info").show();
+    } else {
+      $(".btn-white").text("READ MORE");
+      $(".promo-info").hide();
+    }
+  });
 });
