@@ -27,6 +27,7 @@
   font-weight: $Regular;
   font-size: $text-size;
   color: #eaeaea;
+  transition: 3s ease;
 
   & h2 {
     font-family: $Roboto;
@@ -38,6 +39,10 @@
   & p {
     margin-top: 18px;
   }
+}
+
+.promo-info {
+  transition: 3s;
 }
 
 .promo-info_article {

@@ -6538,6 +6538,65 @@ input[type="range"]:focus::-ms-fill-upper {
 	color: #000000;
 }
 
+.search-form form {
+	padding: 0;
+	border: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-form form label {
+	margin: 0;
+	flex: 0 0 39%;
+	position: relative;
+}
+
+.search-form form label input {
+	width: 100%;
+	height: 50px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #27273d;
+	padding: 0 0 0 45px;
+}
+
+.search-form form label input::-webkit-input-placeholder {
+	color: #27273d63;
+}
+
+.search-form form label input::-ms-input-placeholder {
+	color: #27273d63;
+}
+
+.search-form form label input::placeholder {
+	color: #27273d63;
+}
+
+.search-form form label::before {
+	display: block;
+	content: "";
+	width: 45px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.search-form form .casino-name_icon::before {
+	background-image: url("../img/search.svg");
+}
+
+.search-form form .casino-location_icon::before {
+	background-image: url("../img/position.svg");
+}
+
+.search-form form button {
+	flex: 0 0 20%;
+	height: 50px;
+}
+
 .tabs {
 	height: 450px;
 	padding: 25px;
@@ -7076,7 +7135,6 @@ input[type="range"]:focus::-ms-fill-upper {
 .card {
 	border: 0;
 	border-radius: 0;
-	height: 302px;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	transition: 1s;
@@ -7154,6 +7212,162 @@ input[type="range"]:focus::-ms-fill-upper {
 .front a {
 	width: 150px;
 	margin: auto;
+}
+
+.back {
+	padding: 15px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: #27273d;
+	-webkit-transform: rotatey(-180deg);
+	transform: rotatey(-180deg);
+}
+
+.back h5 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #27273d;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 15px;
+}
+
+.back p {
+	margin-bottom: 15px;
+}
+
+.back p span {
+	color: #6e727a;
+	margin-left: 5px;
+}
+
+.back .licenses-img img {
+	display: inline-block;
+	width: 20px;
+	height: 13px;
+	margin-left: 5px;
+}
+
+.back a {
+	display: inline-block;
+	min-width: 230px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #587be1;
+	margin: 0 auto;
+}
+
+.card {
+	border: 0;
+	border-radius: 0;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	transition: 1s;
+	border: 1px solid #e5e6e8;
+}
+
+.flip {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.fa-front {
+	background-image: url("../img/front-icon.svg");
+}
+
+.fa-back {
+	background-image: url("../img/back-icon.svg");
+}
+
+.flipped {
+	-webkit-transform: rotatey(-180deg);
+	transform: rotatey(-180deg);
+}
+
+.front2,
+.back {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: relative;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.front2 {
+	padding: 17px;
+	font-family: .front2 Roboto;
+	color: #828282;
+}
+
+.front2 .card-header {
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.front2 .card-header .card-logo {
+	flex: 0 0 22%;
+	border-radius: 50%;
+}
+
+.front2 .card-header .card-logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.front2 .card-header .card-info {
+	flex: 0 0 73%;
+}
+
+.front2 .card-header .card-info .rating-items {
+	justify-content: flex-start;
+}
+
+.front2 .card-header .card-info .rating-items .rating-item {
+	width: 20px;
+	height: 20px;
+}
+
+.front2 .card-header .card-info span {
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background: rgba(42, 91, 217, 0.24);
+	border-radius: 50%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	line-height: 27px;
+	font-size: 15px;
+	text-align: center;
+	color: #27273d;
+	margin: 10px 10px 10px 0;
+}
+
+.front2 .card-header .card-info h4 {
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #000000;
 }
 
 .back {
@@ -7726,6 +7940,10 @@ main {
 	margin-bottom: 60px;
 }
 
+.casino-slider .card {
+	height: 302px;
+}
+
 .review-header {
 	min-height: 480px;
 	background-color: #27273d;
@@ -8207,6 +8425,7 @@ main {
 	font-weight: 400;
 	font-size: 16px;
 	color: #eaeaea;
+	transition: 3s ease;
 }
 
 .promo-header_box h2,
@@ -8222,6 +8441,10 @@ main {
 .promo-info p,
 .promo-info_article p {
 	margin-top: 18px;
+}
+
+.promo-info {
+	transition: 3s;
 }
 
 .promo-info_article {
@@ -8269,6 +8492,72 @@ main {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 30px;
+}
+
+.listing-header {
+	min-height: 850px;
+	background-color: #27273d;
+	background-image: url("../../img/listing-bi.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 27px;
+	padding: 65px 0;
+}
+
+.licting-header_box h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 33px;
+}
+
+.licting-header_box .search-form {
+	margin-bottom: 20px;
+}
+
+.licting-header_box .filter {
+	background-color: #fff;
+}
+
+.licting-header_box .filter .filter-form {
+	padding: 30px 100px;
+}
+
+.listing-card h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	color: #27273d;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.listing-card .listing-card_list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.listing-card .listing-card_list .card {
+	flex: 0 0 49%;
+	min-height: 200px;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+
+.listing-card .listing-card_list .card:nth-child(2n + 2) {
+	margin-right: 0;
+}
+
+.listing-card .listing-card_list .card:nth-last-child(-n + 2) {
+	margin-bottom: 0;
+}
+
+.listing-card .pagination2 {
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

@@ -28,7 +28,7 @@
   transform: rotatey(-180deg);
 }
 
-.front,
+.front2,
 .back {
   width: 100%;
   height: 100%;
@@ -38,39 +38,66 @@
   backface-visibility: hidden;
 }
 
-.front {
-  text-align: center;
-  padding: 25px 20px 50px 20px;
+.front2 {
+  padding: 17px;
+  font-family: &Roboto;
+  color: #828282;
 
-  & .card-img {
-    width: 93px;
-    height: 93px;
-    border-radius: 50%;
-    margin: 0 auto 19px auto;
+  & .card-header {
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
 
-    & img {
-      display: block;
-      width: 100%;
-      height: auto;
+    & .card-logo {
+      flex: 0 0 22%;
       border-radius: 50%;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
     }
-  }
 
-  & .rating-items {
-    margin-bottom: 14px;
-  }
+    & .card-info {
+      flex: 0 0 73%;
 
-  & h4 {
-    font-family: $Roboto;
-    font-weight: $Medium;
-    font-size: $h4;
-    color: $title;
-    margin-bottom: 14px;
-  }
+      & .rating-items {
+        justify-content: flex-start;
 
-  & a {
-    width: 150px;
-    margin: auto;
+        & .rating-item {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      & span {
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        background: rgba(42, 91, 217, 0.24);
+        border-radius: 50%;
+        font-family: $Roboto;
+        font-weight: $Medium;
+        line-height: 27px;
+        font-size: 15px;
+        text-align: center;
+        color: $title;
+        margin: 10px 10px 10px 0;
+      }
+
+      & h4 {
+        display: inline-block;
+        font-family: $Roboto;
+        font-weight: $Medium;
+        font-size: $h4;
+        color: #000000;
+      }
+    }
   }
 }
 
