@@ -8518,11 +8518,17 @@ main {
 }
 
 .licting-header_box .filter {
+	margin-bottom: 20px;
 	background-color: #fff;
 }
 
 .licting-header_box .filter .filter-form {
 	padding: 30px 100px;
+}
+
+.licting-header_box .map-casino {
+	width: 100%;
+	height: 400px;
 }
 
 .listing-card h2 {

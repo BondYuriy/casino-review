@@ -18,16 +18,22 @@
     margin-bottom: 33px;
   }
 
-  .search-form {
+  & .search-form {
     margin-bottom: 20px;
   }
 
   & .filter {
+    margin-bottom: 20px;
     background-color: #fff;
 
     & .filter-form {
       padding: 30px 100px;
     }
+  }
+
+  & .map-casino {
+    width: 100%;
+    height: 400px;
   }
 }
 
