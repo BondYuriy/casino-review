@@ -1,0 +1,38 @@
+.checkbox-group_box .form-check {
+  & .form-check-input {
+    appearance: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    transition: all 0.15s ease-out 0s;
+    background: #fff;
+    border: none;
+    color: #fff;
+    border: 1px solid #e8e9eb;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+
+    &:checked {
+      border: 1px solid #3fab36;
+    }
+
+    &:checked::before {
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      content: "";
+      display: inline-block;
+      background-image: url("../../img/selected.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

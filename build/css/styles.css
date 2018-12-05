@@ -6400,6 +6400,45 @@ input[type="range"]:focus::-ms-fill-upper {
 	padding-right: 43px;
 }
 
+.checkbox-group_box .form-check .form-check-input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 32px;
+	width: 32px;
+	transition: all 0.15s ease-out 0s;
+	background: #fff;
+	border: none;
+	color: #fff;
+	border: 1px solid #e8e9eb;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+}
+
+.checkbox-group_box .form-check .form-check-input:checked {
+	border: 1px solid #3fab36;
+}
+
+.checkbox-group_box .form-check .form-check-input:checked::before {
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	content: "";
+	display: inline-block;
+	background-image: url("../../img/selected.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .filter {
 	border: 1px solid #e8e9eb;
 }
@@ -6418,7 +6457,7 @@ input[type="range"]:focus::-ms-fill-upper {
 .filter .filter-form {
 	display: flex;
 	justify-content: space-between;
-	padding: 38px;
+	padding: 30px;
 }
 
 .filter .filter-form .form-group {
@@ -6478,7 +6517,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .filter .filter-form .checkbox-group {
-	flex: 0 0 18%;
+	flex: 0 0 19%;
 }
 
 .filter .filter-form .checkbox-group h5 {
