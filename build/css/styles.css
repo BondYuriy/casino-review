@@ -8497,7 +8497,7 @@ main {
 .listing-header {
 	min-height: 850px;
 	background-color: #27273d;
-	background-image: url("../../img/listing-bi.png");
+	background-image: url("../img/listing-bi.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
