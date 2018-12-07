@@ -1,0 +1,27 @@
+.subscription {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & input {
+    border: 0;
+    height: 49px;
+    flex: 0 0 35%;
+    padding: 15px;
+    background: #5757a4;
+    color: $text-white;
+
+    &::placeholder {
+      background: #5757a4;
+      font-family: $Roboto;
+      font-weight: $Medium;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.36);
+    }
+  }
+
+  & button {
+    flex: 0 0 25%;
+    height: 49px;
+  }
+}

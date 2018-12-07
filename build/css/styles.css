@@ -6439,6 +6439,50 @@ input[type="range"]:focus::-ms-fill-upper {
 	background-position: center;
 }
 
+.subscription {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subscription input {
+	border: 0;
+	height: 49px;
+	flex: 0 0 35%;
+	padding: 15px;
+	background: #5757a4;
+	color: #fff;
+}
+
+.subscription input::-webkit-input-placeholder {
+	background: #5757a4;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.36);
+}
+
+.subscription input::-ms-input-placeholder {
+	background: #5757a4;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.36);
+}
+
+.subscription input::placeholder {
+	background: #5757a4;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.36);
+}
+
+.subscription button {
+	flex: 0 0 25%;
+	height: 49px;
+}
+
 .filter {
 	border: 1px solid #e8e9eb;
 }
@@ -7417,6 +7461,63 @@ input[type="range"]:focus::-ms-fill-upper {
 	margin: 0 auto;
 }
 
+.card3 {
+	width: 230px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	background: #6188c2;
+	padding: 10px 10px 42px 10px;
+	position: relative;
+}
+
+.card3 .card3-img {
+	flex: 0 0 30%;
+	border-radius: 50%;
+}
+
+.card3 .card3-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.card3 .card3-info {
+	flex: 0 0 65%;
+}
+
+.card3 .card3-info span {
+	display: block;
+}
+
+.card3 .card3-info .title {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #27273d;
+}
+
+.card3 .card3-info a {
+	background: #5035b9;
+	padding: 9px 24px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.card3 .card3-info a:hover {
+	opacity: 0.8;
+}
+
 .information-card {
 	min-height: 370px;
 }
@@ -7694,6 +7795,10 @@ a {
 	margin-right: 18px;
 }
 
+main {
+	background-color: #fff;
+}
+
 .main-header {
 	background-color: #27273d;
 	margin-bottom: 85px;
@@ -7701,68 +7806,98 @@ a {
 
 .main-header_box {
 	display: flex;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 43px;
+	overflow: hidden;
 }
 
-.gallery-game {
+.main-header_box .home-gallery {
 	flex: 0 0 77%;
-	padding: 70px 25px 70px 0;
+	padding: 37px 15px 0 0;
+	position: relative;
+}
+
+.main-header_box .home-gallery .home-header_carousel {
+	height: 180px;
+}
+
+.main-header_box .home-gallery .home-header_carousel .owl-carousel2 {
+	width: 800px;
+}
+
+.main-header_box .home-gallery .home-header_carousel .owl-carousel .item2 .card3 {
+	margin-right: 19px;
+}
+
+.main-header_box .home-gallery .home-header_carousel h3 {
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.main-header_box .home-gallery .home-header_form {
+	margin-bottom: 25px;
+}
+
+.main-header_box .home-gallery .home-header_form h3 {
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+
+.main-header_box .home-gallery .home-header_form .subscription {
+	margin-bottom: 10px;
+}
+
+.main-header_box .home-gallery .home-header_form p {
+	font-size: 13px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box {
 	display: flex;
 	justify-content: space-between;
 }
 
-.gallery-game .gallery-game_box {
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item {
 	flex: 0 0 60%;
-}
-
-.gallery-game .gallery-game_box .gallery-game_item {
 	position: relative;
-	margin-bottom: 25px;
 }
 
-.gallery-game .gallery-game_box .gallery-game_item img {
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_img img {
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
-.gallery-game .gallery-game_box .gallery-game_item a {
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_info {
 	position: absolute;
-	left: 18px;
-	bottom: 18px;
-	z-index: 10;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
 }
 
-.gallery-game .gallery-game_box .gallery-game_item::after {
-	display: block;
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-color: rgba(16, 16, 55, 0.5);
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_info p {
+	width: 70%;
 }
 
-.gallery-game .gallery-game_box2 {
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 {
 	flex: 0 0 37%;
-	max-height: 540px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem {
 	position: relative;
 }
 
-.gallery-game .gallery-game_box2 img {
-	display: block;
-	width: 100%;
-	height: 100%;
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem .gallery-elem_img {
+	position: relative;
 }
 
-.gallery-game .gallery-game_box2 a {
-	position: absolute;
-	left: 18px;
-	bottom: 18px;
-	z-index: 10;
-}
-
-.gallery-game .gallery-game_box2::after {
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem .gallery-elem_img::before {
 	display: block;
 	content: "";
 	position: absolute;
@@ -7770,15 +7905,58 @@ a {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: rgba(16, 16, 55, 0.5);
+	background: rgba(142, 53, 197, 0.56);
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem .gallery-elem_img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem .gallery-elem_info {
+	position: absolute;
+	left: 20px;
+	bottom: 50%;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem .gallery-elem_info p {
+	width: 60%;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem_box {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 17px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem_box .gallery-elem {
+	flex: 0 0 47%;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem_box .gallery-elem .gallery-elem_img img {
+	display: block;
+	width: 100%;
+	height: 120px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem_box .gallery-elem .gallery-elem_info {
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 .gallery-elem_box .gallery-elem .gallery-elem_info p {
+	width: 100%;
 }
 
 .main-header_box .top-games {
 	flex: 0 0 23%;
-}
-
-main {
-	background-color: #fff;
+	padding-top: 37px;
 }
 
 .article {
