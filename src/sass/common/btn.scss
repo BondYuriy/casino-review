@@ -41,3 +41,14 @@
     color: $title;
   }
 }
+
+.btn-blue {
+  border: #139ad6 solid 2px;
+  color: #139ad6;
+  min-width: 120px;
+
+  &:hover {
+    background-color: #139ad6;
+    color: #fff;
+  }
+}
