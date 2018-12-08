@@ -175,3 +175,63 @@
     color: #587be1;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .casino-table_header {
+    & .column-1 {
+      flex: 0 0 17%;
+    }
+
+    & .column-2 {
+      flex: 0 0 24%;
+    }
+
+    & .column-3 {
+      flex: 0 0 20%;
+    }
+
+    & .column-4 {
+      flex: 0 0 19%;
+    }
+
+    & .column-5 {
+      flex: 0 0 20%;
+    }
+  }
+
+  .table-infos {
+    & .table-img {
+      flex: 0 0 17%;
+      padding: 10px;
+    }
+
+    & .table-rating {
+      flex: 0 0 24%;
+      padding: 10px;
+    }
+
+    & .table-bomus {
+      flex: 0 0 20%;
+      padding: 10px;
+    }
+
+    & .table-payment {
+      flex: 0 0 19%;
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    & .table-btn {
+      flex: 0 0 20%;
+      padding: 10px;
+
+      & button {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .table-form form textarea {
+    width: 47%;
+  }
+}

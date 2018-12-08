@@ -1,5 +1,5 @@
 .casino-card {
-  min-width: 250px;
+  min-width: 210px;
   min-height: 290px;
   padding: 20px;
   border: 1px solid #e8e9eb;
@@ -73,5 +73,17 @@
     display: block;
     width: 145px;
     margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .casino-card .card-header {
+    & .card-logo {
+      flex: 0 0 20%;
+    }
+
+    & .card-info {
+      flex: 0 0 73%;
+    }
   }
 }

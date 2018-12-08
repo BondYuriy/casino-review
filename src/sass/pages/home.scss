@@ -328,3 +328,23 @@ main {
     height: 302px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .info-list li {
+    flex: 0 0 45%;
+
+    & .fa {
+      flex: 0 0 33%;
+    }
+  }
+
+  .main-header_box {
+    & .home-gallery {
+      flex: 0 0 60%;
+    }
+
+    & .top-games {
+      flex: 0 0 40%;
+    }
+  }
+}

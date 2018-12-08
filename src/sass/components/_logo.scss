@@ -4,3 +4,11 @@
   height: 35px;
   background-image: url("../img/logo.png");
 }
+
+@media (max-width: 1199px) {
+  .logo a {
+    width: 71px;
+    height: 38px;
+    background-image: url("../../img/logo-2.png");
+  }
+}

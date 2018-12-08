@@ -122,3 +122,9 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tabs .nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+}

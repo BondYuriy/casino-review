@@ -73,3 +73,9 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .licting-header_box .filter .filter-form {
+    padding: 25px;
+  }
+}
