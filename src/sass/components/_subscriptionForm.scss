@@ -27,24 +27,29 @@
   }
 }
 
+@media (max-width: 767px) {
+  .subscription {
+    & input {
+      flex: 0 0 100%;
+      margin-bottom: 10px;
+    }
+
+    & button {
+      flex: 0 0 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .subscription {
     & input {
       flex: 0 0 100%;
       margin-bottom: 10px;
-
-      &::placeholder {
-        background: #5757a4;
-        font-family: $Roboto;
-        font-weight: $Medium;
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.36);
-      }
     }
 
     & button {
       flex: 0 0 100%;
-      height: 49px;
     }
   }
 }

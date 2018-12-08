@@ -30,3 +30,13 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .footer-box {
+    flex-direction: column-reverse;
+
+    & .social {
+      margin-bottom: 35px;
+    }
+  }
+}

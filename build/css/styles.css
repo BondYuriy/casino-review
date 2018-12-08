@@ -7770,14 +7770,34 @@ a {
 
 .header-box .nav ul li a {
 	display: inline-block;
+	height: 100%;
 	padding: 30px 30px;
 	color: #cdcdcd;
 	text-decoration: none;
 }
 
+.header-box .nav ul li a svg {
+	display: none;
+	width: 34px;
+	height: 34px;
+	fill: #5d698d;
+}
+
+.header-box .nav ul li a svg:hover {
+	fill: rgba(129, 98, 255, 0.5);
+}
+
 .header-box .nav ul li a:hover {
+	color: #fff;
+}
+
+.header-box .nav ul .active a {
 	background-color: #3a4460;
 	color: #fff;
+}
+
+.header-box .nav ul .active a svg {
+	fill: rgba(129, 98, 255, 0.5);
 }
 
 .footer {
@@ -7824,6 +7844,7 @@ main {
 
 .main-header_box {
 	display: flex;
+	flex-wrap: wrap;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -10467,33 +10488,8 @@ main {
 	margin-bottom: 10px;
 }
 
-.subscription input::-webkit-input-placeholder {
-	background: #5757a4;
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.36);
-}
-
-.subscription input::-ms-input-placeholder {
-	background: #5757a4;
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.36);
-}
-
-.subscription input::placeholder {
-	background: #5757a4;
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.36);
-}
-
 .subscription button {
 	flex: 0 0 100%;
-	height: 49px;
 }
 
 .filter .filter-form .form-group {
@@ -12322,6 +12318,145 @@ main {
 .navbar-expand-md > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.subscription input {
+	flex: 0 0 100%;
+	margin-bottom: 10px;
+}
+
+.subscription button {
+	flex: 0 0 100%;
+	margin-top: 20px;
+}
+
+.header {
+	border-bottom: 0;
+}
+
+.header .nav ul li a {
+	padding: 30px 15px;
+}
+
+.header .nav ul li a span {
+	display: none;
+}
+
+.header .nav ul li a svg {
+	display: block;
+}
+
+.header .nav ul .active a {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.footer-box {
+	flex-direction: column-reverse;
+}
+
+.footer-box .social {
+	margin-bottom: 35px;
+}
+
+.main-header {
+	margin-bottom: 26px;
+}
+
+.main-header_box .home-gallery {
+	flex: 0 0 100%;
+	padding: 37px 0 0 0;
+}
+
+.main-header_box .home-gallery .home-header_form {
+	margin-bottom: 25px;
+}
+
+.main-header_box .home-gallery .home-header_form p {
+	display: none;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item {
+	flex: 0 0 100%;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_info {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_info h3 {
+	font-weight: 500;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_info p {
+	width: 100%;
+	line-height: 21px;
+	font-size: 15px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item .gallery-casino_info .btn-white {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.main-header_box .home-gallery .gallery-casino_box .gallery-casino_item2 {
+	display: none;
+}
+
+.main-header_box .top-games {
+	flex: 0 0 100%;
+	padding: 37px 10px 0px 10px;
+	border: 0;
+}
+
+.info-list li {
+	flex: 0 0 48%;
+	align-items: center;
+}
+
+.info-list li .fa {
+	flex: 0 0 35%;
+	height: 55px;
+	background-size: contain;
+}
+
+.info-list li .article-list {
+	flex: 0 0 55%;
+}
+
+.info-list li .article-list p {
+	display: none;
+}
+
+.article-info .article {
+	flex: 0 0 100%;
+}
+
+.article-info .article h2 {
+	text-align: center;
+}
+
+.article-info .article-icon {
+	display: none;
+}
+
+.option-list li {
+	flex: 0 0 100%;
+	margin-bottom: 20px;
+}
+
+.option-list li:last-child(-n + 1) {
+	margin-bottom: 0;
 }
 
 }

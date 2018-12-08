@@ -21,14 +21,60 @@
 
       & li a {
         display: inline-block;
+        height: 100%;
         padding: 30px 30px;
         color: #cdcdcd;
         text-decoration: none;
 
+        & svg {
+          display: none;
+          width: 34px;
+          height: 34px;
+          fill: #5d698d;
+
+          &:hover {
+            fill: rgba(129, 98, 255, 0.5);
+          }
+        }
+
         &:hover {
-          background-color: #3a4460;
           color: #fff;
         }
+      }
+
+      & .active {
+        & a {
+          background-color: #3a4460;
+          color: #fff;
+
+          & svg {
+            fill: rgba(129, 98, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    border-bottom: 0;
+
+    & .nav ul li a {
+      padding: 30px 15px;
+
+      & span {
+        display: none;
+      }
+
+      & svg {
+        display: block;
+      }
+    }
+
+    & .nav ul .active {
+      & a {
+        background-color: rgba(0, 0, 0, 0);
       }
     }
   }
