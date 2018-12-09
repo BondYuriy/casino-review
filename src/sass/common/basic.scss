@@ -29,3 +29,13 @@ a {
 .hidden {
   display: none;
 }
+
+.read-more-link,
+.show-less-link {
+  text-decoration: none;
+  color: #587be1;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

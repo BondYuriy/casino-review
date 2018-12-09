@@ -41,20 +41,14 @@
   display: flex;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid #e0e1e4;
-  border-left: 1px solid #e0e1e4;
-  border-right: 1px solid #e0e1e4;
   font-family: $Roboto;
   font-weight: $Regular;
   font-size: $text-size;
   text-align: center;
   color: #6e727a;
+  position: relative;
 
   & .table-img {
-    flex: 0 0 16%;
-    padding: 20px;
-    border-right: 1px solid #e0e1e4;
-
     & img {
       display: block;
       width: 100%;
@@ -63,46 +57,63 @@
     }
   }
 
-  & .table-rating {
-    flex: 0 0 19%;
-    padding: 20px;
-    border-right: 1px solid #e0e1e4;
+  & .table-collapse_group {
+    & .table-collapse_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-    & span {
-      font-weight: $Medium;
-      font-size: 20px;
-      color: $title;
+      & .table-rating {
+        flex: 0 0 32.7%;
+        padding: 20px;
+
+        & span {
+          font-weight: $Medium;
+          font-size: 20px;
+          color: $title;
+        }
+      }
+
+      & .table-bomus {
+        flex: 0 0 34.7%;
+        padding: 10px;
+
+        & p .text-now {
+          text-transform: uppercase;
+          color: #f21a1a;
+          margin-right: 5px;
+        }
+
+        & p .text-free {
+          text-transform: capitalize;
+          color: #249f1a;
+          margin-right: 5px;
+        }
+      }
+
+      & .table-payment {
+        flex: 0 0 32.6%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
-  & .table-bomus {
-    flex: 0 0 20%;
-    padding: 10px;
-    border-right: 1px solid #e0e1e4;
-
-    & p .text-now {
-      text-transform: uppercase;
-      color: #f21a1a;
-      margin-right: 5px;
-    }
-
-    & p .text-free {
-      text-transform: capitalize;
-      color: #249f1a;
-      margin-right: 5px;
-    }
-  }
-
-  & .table-payment {
-    flex: 0 0 19%;
-    padding: 20px;
-    border-right: 1px solid #e0e1e4;
-    display: flex;
-    justify-content: center;
+  & .btn-collapse_table {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border: 1px solid #dcdde0;
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
   }
 
   & .table-btn {
-    flex: 0 0 26%;
     padding: 20px;
   }
 }
@@ -176,6 +187,165 @@
   }
 }
 
+@media (max-width: 767px) {
+  .casino-table_header {
+    display: none;
+  }
+
+  .table-infos {
+    padding: 35px 0;
+    flex-wrap: wrap;
+    border: 1px solid #e8e9eb;
+
+    & .table-img {
+      flex: 0 0 52%;
+      padding: 7px;
+      border: 0;
+    }
+
+    & .table-collapse_group {
+      flex: 0 0 100%;
+      display: none;
+
+      & .table-collapse_box {
+        width: 100%;
+
+        & .table-rating {
+          border: 0;
+          text-align: start;
+          padding: 8px;
+
+          & span,
+          p {
+            font-size: 13px;
+          }
+
+          & .rating-items {
+            justify-content: flex-start;
+
+            & .rating-item {
+              width: 10px;
+              height: 10px;
+              margin-right: 2px;
+            }
+          }
+        }
+
+        & .table-bomus {
+          border: 0;
+          font-size: 13px;
+          text-align: start;
+          padding: 8px;
+        }
+
+        & .table-payment {
+          border: 0;
+          padding: 8px;
+          flex-direction: column;
+        }
+      }
+    }
+
+    & .btn-collapse_table {
+      display: block;
+    }
+
+    & .table-btn {
+      flex: 0 0 48%;
+      padding: 7px;
+
+      & .btn {
+        padding: 3px;
+      }
+
+      & button {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .table-form {
+    margin: 0;
+    padding: 30px 0 30px 0;
+    background: #ffffff;
+
+    & h3 {
+      font-size: 15px;
+    }
+
+    & form textarea {
+      width: 100%;
+    }
+
+    & p {
+      font-size: 14px;
+      padding: 7px;
+      text-align: start;
+    }
+
+    & .form-btn {
+      & .robot {
+        display: none;
+      }
+
+      & .btn {
+        margin: 24px auto 0 auto;
+      }
+    }
+  }
+
+  .casino-table_footer {
+    display: none;
+  }
+
+  .class-table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+  }
+
+  .class-table_padding {
+    padding-bottom: 110px;
+
+    & .btn-collapse_table img {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .table-infos {
+    border-bottom: 1px solid #e0e1e4;
+    border-left: 1px solid #e0e1e4;
+    border-right: 1px solid #e0e1e4;
+
+    & .table-img {
+      flex: 0 0 16%;
+      padding: 20px;
+    }
+
+    & .table-collapse_group {
+      flex: 0 0 58%;
+      display: block;
+    }
+
+    & .btn-collapse_table {
+      display: none;
+
+      & img {
+        display: inline-block;
+        width: 8px;
+        height: 13px;
+      }
+    }
+
+    & .table-btn {
+      flex: 0 0 26%;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .casino-table_header {
     & .column-1 {
@@ -205,20 +375,24 @@
       padding: 10px;
     }
 
-    & .table-rating {
-      flex: 0 0 24%;
-      padding: 10px;
-    }
+    & .table-collapse_group {
+      flex: 0 0 63%;
 
-    & .table-bomus {
-      flex: 0 0 20%;
-      padding: 10px;
-    }
+      & .table-collapse_box {
+        & .table-rating {
+          flex: 0 0 38%;
+          padding: 10px;
+        }
 
-    & .table-payment {
-      flex: 0 0 19%;
-      padding: 10px;
-      flex-direction: column;
+        & .table-bomus {
+          flex: 0 0 32%;
+        }
+
+        & .table-payment {
+          flex: 0 0 30%;
+          padding: 10px;
+        }
+      }
     }
 
     & .table-btn {
