@@ -49,3 +49,18 @@
     height: 50px;
   }
 }
+
+@media (max-width: 767px) {
+  .search-form form {
+    flex-direction: column;
+
+    & label {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    & button {
+      width: 100%;
+    }
+  }
+}

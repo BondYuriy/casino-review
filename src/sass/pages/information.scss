@@ -55,6 +55,26 @@
   margin-bottom: 90px;
 }
 
+@media (max-width: 767px) {
+  .information-list .information-card {
+    margin: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .resent-casino .casino-cards_list .casino-card {
+    margin: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .information-list .information-card {
     flex: 0 0 48%;

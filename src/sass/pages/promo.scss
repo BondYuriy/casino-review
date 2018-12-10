@@ -97,6 +97,36 @@
   }
 }
 
+@media (max-width: 767px) {
+  .promo-casino {
+    & .filter {
+      width: 100%;
+
+      & h4 {
+        display: none;
+      }
+    }
+
+    & .casino-cards_list .casino-card {
+      flex: 0 0 100%;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .promo-new_box .promo-list .information-card {
+    margin: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .promo-casino {
     & .filter {

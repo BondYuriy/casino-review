@@ -8826,14 +8826,6 @@ main {
 	margin-bottom: 20px;
 }
 
-.listing-card .listing-card_list .card:nth-child(2n + 2) {
-	margin-right: 0;
-}
-
-.listing-card .listing-card_list .card:nth-last-child(-n + 2) {
-	margin-bottom: 0;
-}
-
 .listing-card .pagination2 {
 	display: flex;
 	justify-content: center;
@@ -10556,6 +10548,14 @@ main {
 
 .categories-top_casinos .top-games .top-games_box .games-list .games-item:nth-last-child(-n + 4) {
 	border-bottom: 0;
+}
+
+.listing-card .listing-card_list .card:nth-child(2n + 2) {
+	margin-right: 0;
+}
+
+.listing-card .listing-card_list .card:nth-last-child(-n + 2) {
+	margin-bottom: 0;
 }
 
 }
@@ -12424,6 +12424,38 @@ main {
 	margin-top: 20px;
 }
 
+.filter .filter-form .form-group {
+	flex: 0 0 100%;
+}
+
+.filter .filter-form .filter-range {
+	flex: 0 0 100%;
+	position: relative;
+	margin-bottom: 27px;
+}
+
+.filter .filter-form .filter-range .start,
+.filter .filter-form .filter-range .end {
+	bottom: -15px;
+}
+
+.filter .filter-form .checkbox-group {
+	flex: 0 0 100%;
+}
+
+.search-form form {
+	flex-direction: column;
+}
+
+.search-form form label {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.search-form form button {
+	width: 100%;
+}
+
 .tabs {
 	padding: 0;
 	border: 0;
@@ -12583,6 +12615,10 @@ main {
 .class-table_padding .btn-collapse_table img {
 	-webkit-transform: rotateX(180deg);
 	transform: rotateX(180deg);
+}
+
+.pagination2 ul li {
+	margin-right: 30px;
 }
 
 .pagination3 ul li a {
@@ -12816,6 +12852,76 @@ main {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	z-index: 10000;
+}
+
+.information-list .information-card {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.information-list .information-card:last-child {
+	margin-bottom: 0;
+}
+
+.resent-casino .casino-cards_list .casino-card {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.resent-casino .casino-cards_list .casino-card:last-child {
+	margin-bottom: 0;
+}
+
+.promo-casino .filter {
+	width: 100%;
+}
+
+.promo-casino .filter h4 {
+	display: none;
+}
+
+.promo-casino .casino-cards_list .casino-card {
+	flex: 0 0 100%;
+	margin-bottom: 15px;
+}
+
+.promo-casino .casino-cards_list .casino-card:last-child {
+	margin-bottom: 0;
+}
+
+.promo-new_box .promo-list .information-card {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.promo-new_box .promo-list .information-card:last-child {
+	margin-bottom: 0;
+}
+
+.listing-header {
+	padding: 30px 0;
+}
+
+.licting-header_box .filter h4 {
+	display: none;
+}
+
+.licting-header_box .filter .filter-form {
+	padding: 20px 15px;
+}
+
+.listing-card h2 {
+	font-size: 20px;
+}
+
+.listing-card .listing-card_list .card {
+	flex: 0 0 100%;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.listing-card .listing-card_list .card:last-child {
+	margin-bottom: 0;
 }
 
 }
