@@ -88,3 +88,16 @@ $(document).ready(function() {
       .append("<a href='' class='read-more-link'>... Read more</a>");
   });
 });
+
+//=============================================================================
+
+$(".nav-link").click(function() {
+  $(this)
+    .prev(".table-collapse_group")
+    .toggle();
+  // .toggleClass("class-table");
+
+  // $(this)
+  //   .parents(".table-infos")
+  //   .toggleClass("class-table_padding");
+});

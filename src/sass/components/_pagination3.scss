@@ -1,0 +1,38 @@
+.pagination3 {
+  & ul {
+    display: flex;
+
+    & li {
+      border-right: 1px solid #e5e0ff;
+      height: 35px;
+
+      & a {
+        display: inline-block;
+        padding: 10px;
+
+        & svg {
+          display: block;
+          width: 9px;
+          height: 15px;
+          fill: #d7d7d7;
+        }
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    & .active {
+      & a svg {
+        fill: #4f4f4f;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pagination3 ul li a {
+    padding: 10px 30px;
+  }
+}

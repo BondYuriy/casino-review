@@ -123,8 +123,32 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .tabs .nav .nav-item .nav-link {
-    font-size: 16px;
+@media (max-width: 767px) {
+  .tabs .nav {
+    padding: 0 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    & .nav-item {
+      border: 0;
+      flex: 100%;
+      padding: 24px 0;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid #e8e9eb;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & .nav-link {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .tabs .nav .nav-item .nav-link {
+      font-size: 16px;
+    }
   }
 }
