@@ -152,8 +152,12 @@
 
     & .tab-content {
       & #pills-review {
-        & .input-list li {
-          margin-bottom: 40px;
+        & .input-list {
+          columns: 1;
+
+          & li {
+            margin-bottom: 20px;
+          }
         }
       }
     }

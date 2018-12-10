@@ -207,6 +207,7 @@
       }
 
       & span {
+        display: block;
         font-family: $Roboto;
         font-weight: $Medium;
         font-size: 18px;
@@ -224,6 +225,9 @@
 @media (min-width: 768px) {
   .main-review-container {
     & .btn-show {
+      & span {
+        display: none;
+      }
     }
   }
 }

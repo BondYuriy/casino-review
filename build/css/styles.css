@@ -10550,6 +10550,10 @@ main {
 	flex: 0 0 26%;
 }
 
+.main-review-container .btn-show span {
+	display: none;
+}
+
 .categories-top_casinos .top-games .top-games_box .games-list .games-item:nth-last-child(-n + 4) {
 	border-bottom: 0;
 }
@@ -12448,8 +12452,13 @@ main {
 	text-align: center;
 }
 
+.tabs .tab-content #pills-review .input-list {
+	-webkit-columns: 1;
+	columns: 1;
+}
+
 .tabs .tab-content #pills-review .input-list li {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .casino-table_header {
@@ -12740,6 +12749,7 @@ main {
 }
 
 .main-review-container .btn-show span {
+	display: block;
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
