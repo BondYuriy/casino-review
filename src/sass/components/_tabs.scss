@@ -1,5 +1,5 @@
 .tabs {
-  min-height: 450px;
+  min-height: 500px;
   padding: 25px;
   border: 1px solid #e0e0e0;
 
@@ -79,7 +79,6 @@
 }
 
 .input-list {
-  height: 300px;
   columns: 2;
   column-gap: 15%;
 
@@ -87,7 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 
     & label {
@@ -124,31 +123,55 @@
 }
 
 @media (max-width: 767px) {
-  .tabs .nav {
-    padding: 0 !important;
-    background-color: rgba(0, 0, 0, 0) !important;
+  .tabs {
+    padding: 0;
+    border: 0;
 
-    & .nav-item {
+    & .nav {
+      padding: 0 !important;
       border: 0;
-      flex: 100%;
-      padding: 24px 0;
-      margin-bottom: 20px;
-      background-color: #fff;
-      border: 1px solid #e8e9eb;
+      background-color: rgba(0, 0, 0, 0) !important;
 
-      &:last-child {
-        margin-bottom: 0;
+      & .nav-item {
+        border: 0;
+        flex: 100%;
+        padding: 24px 0;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid #e8e9eb;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & .nav-link {
+          text-align: center;
+        }
       }
+    }
 
-      & .nav-link {
-        text-align: center;
+    & .tab-content {
+      & #pills-review {
+        & .input-list li {
+          margin-bottom: 40px;
+        }
       }
     }
   }
+}
 
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .tabs .nav .nav-item .nav-link {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tabs {
+    & .nav .nav-item .nav-link {
       font-size: 16px;
+    }
+  }
+
+  .input-list {
+    column-gap: 5%;
+
+    & li {
+      margin-bottom: 30px;
     }
   }
 }

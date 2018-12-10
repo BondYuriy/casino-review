@@ -6644,7 +6644,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .tabs {
-	min-height: 450px;
+	min-height: 500px;
 	padding: 25px;
 	border: 1px solid #e0e0e0;
 }
@@ -6729,7 +6729,6 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .input-list {
-	height: 300px;
 	-webkit-columns: 2;
 	columns: 2;
 	-webkit-column-gap: 15%;
@@ -6740,7 +6739,7 @@ input[type="range"]:focus::-ms-fill-upper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	position: relative;
 }
 
@@ -8372,7 +8371,6 @@ main {
 
 .main-review-container .btn-show {
 	top: -70px;
-	background-image: url("../img/Back-2.svg");
 }
 
 .main-review-container .btn-hide {
@@ -9796,14 +9794,6 @@ main {
 
 }
 
-@media (max-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
-
-.tabs .nav .nav-item .nav-link {
-	font-size: 16px;
-}
-
-}
-
 @media (min-width: 768px) {
 
 .container {
@@ -10593,6 +10583,19 @@ main {
 
 .filter .filter-form .checkbox-group {
 	flex: 0 0 30%;
+}
+
+.tabs .nav .nav-item .nav-link {
+	font-size: 16px;
+}
+
+.input-list {
+	-webkit-column-gap: 5%;
+	column-gap: 5%;
+}
+
+.input-list li {
+	margin-bottom: 30px;
 }
 
 .casino-table_header .column-1 {
@@ -12417,8 +12420,14 @@ main {
 	margin-top: 20px;
 }
 
+.tabs {
+	padding: 0;
+	border: 0;
+}
+
 .tabs .nav {
 	padding: 0 !important;
+	border: 0;
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -12437,6 +12446,10 @@ main {
 
 .tabs .nav .nav-item .nav-link {
 	text-align: center;
+}
+
+.tabs .tab-content #pills-review .input-list li {
+	margin-bottom: 40px;
 }
 
 .casino-table_header {
@@ -12690,6 +12703,52 @@ main {
 
 .option-list li:last-child(-n + 1) {
 	margin-bottom: 0;
+}
+
+.review-header_box h1 {
+	font-size: 20px;
+}
+
+.review-header_box span {
+	font-size: 13px;
+}
+
+.review-header_box .review-btn_box .btn {
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.review-header_box .review-btn_box .btn:last-child {
+	margin-bottom: 0;
+}
+
+.main-review-container {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.main-review-container .btn-show {
+	width: 100%;
+	height: 70px;
+	background: #ffffff;
+	border: 1px solid #e8e9eb;
+	top: 0;
+}
+
+.main-review-container .btn-show img {
+	display: none;
+}
+
+.main-review-container .btn-show span {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #b0b0b0;
+}
+
+.main-review-container .btn-hide {
+	bottom: 10px;
 }
 
 .categories-top_casinos .top-games {

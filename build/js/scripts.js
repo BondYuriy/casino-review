@@ -90,14 +90,3 @@ $(document).ready(function() {
 });
 
 //=============================================================================
-
-$(".nav-link").click(function() {
-  $(this)
-    .prev(".table-collapse_group")
-    .toggle();
-  // .toggleClass("class-table");
-
-  // $(this)
-  //   .parents(".table-infos")
-  //   .toggleClass("class-table_padding");
-});
