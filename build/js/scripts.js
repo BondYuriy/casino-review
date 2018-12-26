@@ -4,11 +4,11 @@ $(".carousel-1").owlCarousel({
   nav: true,
   responsive: {
     0: {
-      items: 2,
+      items: 4,
       nav: false
     },
     576: {
-      items: 3,
+      items: 4,
       nav: false
     },
     1200: {
