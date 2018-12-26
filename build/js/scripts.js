@@ -4,13 +4,42 @@ $(".carousel-1").owlCarousel({
   nav: true,
   responsive: {
     0: {
-      items: 1
+      items: 2,
+      nav: false
     },
-    600: {
-      items: 3
+    576: {
+      items: 3,
+      nav: false
     },
     1200: {
       items: 4
+    }
+  }
+});
+
+$(".carousel-2").owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    992: {
+      items: 1,
+      nav: true,
+      singleItem: true,
+      mouseDrag: true,
+      touchDrag: true
+    },
+    1200: {
+      items: 0,
+      nav: false,
+      loop: false,
+      singleItem: false,
+      mouseDrag: false,
+      touchDrag: false
     }
   }
 });

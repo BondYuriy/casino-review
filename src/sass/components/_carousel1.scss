@@ -1,6 +1,36 @@
-.carousel-1 .owl-naw .owl-prev {
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-image: url("../../img/back-icon.svg");
+.carousel-1 {
+  position: relative;
+
+  & .owl-nav {
+    display: flex;
+    margin-top: 15px;
+
+    & .owl-prev {
+      display: block;
+      width: 8px;
+      height: 13px;
+      background-image: url("../img/prev3.svg");
+      background-size: contain;
+      margin-right: 27px;
+    }
+
+    & .owl-next {
+      display: block;
+      width: 8px;
+      height: 13px;
+      background-image: url("../img/next3.svg");
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-1 .owl-nav {
+    margin-top: 25px;
+    padding-left: 20%;
+
+    & .owl-prev {
+      margin-right: 50px;
+    }
+  }
 }
