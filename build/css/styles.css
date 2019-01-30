@@ -8943,7 +8943,12 @@ main {
 	color: rgba(39, 39, 61, 0.39);
 }
 
-.contact-form-box .contact-form form .form-control {
+.contact-form-box .contact-form form label {
+	width: 100%;
+	position: relative;
+}
+
+.contact-form-box .contact-form form label .form-control {
 	border: 0;
 	border-radius: 0;
 	box-shadow: none;
@@ -8954,6 +8959,45 @@ main {
 	height: 50px;
 	border: 1px solid #e8e9eb;
 	margin-bottom: 20px;
+}
+
+.contact-form-box .contact-form form label span {
+	display: inline-block;
+	width: 13px;
+	height: 2px;
+	background: #6e727a;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	right: 25px;
+	bottom: 62%;
+	z-index: 0;
+	transition: all 0.25s ease;
+}
+
+.contact-form-box .contact-form form label span::before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 2px;
+	background: #6e727a;
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+	position: absolute;
+	right: -6px;
+	top: -6px;
+	transition: all 0.25s ease;
+}
+
+.contact-form-box .contact-form form .open span {
+	right: 21px;
+}
+
+.contact-form-box .contact-form form .open span::before {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 0px;
+	top: 0px;
 }
 
 .contact-form-box .contact-form form textarea {
@@ -13280,16 +13324,22 @@ main {
 
 .contact-form-box {
 	flex-direction: column;
+	padding: 0 0 50px 0;
 }
 
-.contact-form-box.contact-form-img {
+.contact-form-box .contact-form-img {
 	margin: auto;
 	padding-bottom: 30px;
 }
 
-.contact-form-box .contact-form-box .contact-form {
+.contact-form-box .contact-form {
 	flex: 0 0 100%;
-	margin-left: auto;
+	margin-left: 0;
+	padding-top: 30px;
+}
+
+.contact-form-box .contact-form form .btn {
+	width: 100%;
 }
 
 }
@@ -13312,6 +13362,50 @@ main {
 .navbar-expand-sm > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 575px) {
+
+.contact-wrapper {
+	flex-direction: column;
+}
+
+.contact-wrapper .contact-wrapper-blue {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 65%;
+}
+
+.contact-wrapper .contact-wrapper-white {
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 35%;
+	bottom: 0;
+}
+
+.contact-form-box {
+	flex-direction: column;
+	padding: 0 0 50px 0;
+}
+
+.contact-form-box .contact-form-img {
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.contact-form-box .contact-form {
+	flex: 0 0 100%;
+	margin-left: 0;
+	padding-top: 30px;
+}
+
+.contact-form-box .contact-form form .btn {
+	width: 100%;
 }
 
 }

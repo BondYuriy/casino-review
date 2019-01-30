@@ -134,3 +134,7 @@ $(document).ready(function() {
 });
 
 //=============================================================================
+
+$(".select-toggle").click(function() {
+  $(this).toggleClass("open");
+});

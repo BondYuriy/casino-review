@@ -67,10 +67,13 @@
                   <form action="#">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
-                    <select class="form-control">
-                      <option selected="">Subject for your question</option>
-                      <option>Subject for your question</option>
-                    </select>
+                    <label for="select-btn" class="select-toggle"><span class="as"></span>
+                      <select class="form-control" id="select-btn">
+                        <option selected="">Subject for your question</option>
+                        <option>Subject for your question</option>
+                      </select>
+                    </label>
+
                     <textarea cols="30" rows="10" placeholder="Please tell us ..."></textarea>
                     <button class="btn btn-orange2" type="submit">SEND</button>
                   </form>
