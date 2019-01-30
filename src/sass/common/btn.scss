@@ -20,6 +20,15 @@
   }
 }
 
+.btn-orange2 {
+  background-color: $orange;
+  color: $text-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .btn-violet {
   border: $violet solid 2px;
   color: $violet;
